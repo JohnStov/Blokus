@@ -7,10 +7,10 @@ type Cell =
     | Red
     | Yellow
 
-type Board = {X : int; Y : int; Cells : Cell [,] }
+type Board = {Cells : Cell [,] }
 
 let initializeBoard x y =
-    {X = x; Y = y; Cells = Array2D.init x y (fun _ _ -> Empty)}
+    {Cells = Array2D.init x y (fun _ _ -> Empty)}
 
 let replaceCell cells x y cell = 
     let newCells = Array2D.copy cells
@@ -22,6 +22,5 @@ let placeCell board x y cell =
     | Empty -> {board with Cells = replaceCell board.Cells x y cell }
     | _ -> board
 
-
-let GameBoard = initializeBoard 20 20
+let InitialGameBoard = initializeBoard 20 20
 
