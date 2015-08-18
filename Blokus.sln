@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Blokus.Test", "Blokus.Test\Blokus.Test.fsproj", "{060E7FCA-41F9-483A-843E-35934C897B0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D736AD9-8204-4B7B-A4FA-0A84DAC198BE} = {1D736AD9-8204-4B7B-A4FA-0A84DAC198BE}
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Blokus", "Blokus\Blokus.fsproj", "{1D736AD9-8204-4B7B-A4FA-0A84DAC198BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{060E7FCA-41F9-483A-843E-35934C897B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{060E7FCA-41F9-483A-843E-35934C897B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{060E7FCA-41F9-483A-843E-35934C897B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D736AD9-8204-4B7B-A4FA-0A84DAC198BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D736AD9-8204-4B7B-A4FA-0A84DAC198BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D736AD9-8204-4B7B-A4FA-0A84DAC198BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D736AD9-8204-4B7B-A4FA-0A84DAC198BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
