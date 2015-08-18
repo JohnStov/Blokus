@@ -7,7 +7,7 @@
         open Blokus.Model
 
         [<Test>]
-        let ``Simple test``() = true |> should not' (be False)
+        let ``Game board X dimension is 20``() = GameBoard.X |> should equal 20
 
         [<Test>]
-        let ``Dependent test``() = add 10 10 |> should equal 20
+        let ``Game board Y dimension is 20``() = GameBoard.Y |> should equal 20
