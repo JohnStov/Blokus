@@ -15,6 +15,7 @@
             GameBoard.Y |> should equal 20
 
         [<Test>]
-        let ``Origin cell is empty``() = 
-            GameBoard.Cells.[0,0] |> should equal Empty
+        let ``All cells are empty initially``() =
+            for cell in GameBoard.Cells do
+                cell |> should equal Empty
             
