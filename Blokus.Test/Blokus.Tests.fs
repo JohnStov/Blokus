@@ -8,19 +8,19 @@
 
         [<Test>]
         let ``Game board X dimension is 20``() = 
-            Array2D.length1 InitialGameBoard.Cells |> should equal 20
+            Array2D.length1 InitialGameBoard.Squares |> should equal 20
 
         [<Test>]
         let ``Game board Y dimension is 20``() = 
-            Array2D.length2 InitialGameBoard.Cells |> should equal 20
+            Array2D.length2 InitialGameBoard.Squares |> should equal 20
 
         [<Test>]
         let ``All cells are empty initially``() =
-            for cell in InitialGameBoard.Cells do
+            for cell in InitialGameBoard.Squares do
                 cell |> should equal Empty
             
         let checkCellColour board x y cell = 
-            board.Cells |> Array2D.iteri (fun cellX cellY value -> 
+            board.Squares |> Array2D.iteri (fun cellX cellY value -> 
                 if cellX = x && cellY = y                
                 then value |> should equal cell 
                 else value |> should equal Empty) 
