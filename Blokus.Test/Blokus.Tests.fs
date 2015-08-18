@@ -1,4 +1,4 @@
-﻿namespace Blokus.Test
+﻿namespace Blokus
 
     module Tests =
 
